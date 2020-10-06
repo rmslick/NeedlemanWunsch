@@ -1,4 +1,4 @@
-# **GenericNodeTemplate**
+# **NeedlemanWunsch**
 
 ### Overview
 `NeedlemanWunsch` NeedlemanWunsch implementation for pairwise global alignment of sequences.

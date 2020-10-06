@@ -68,4 +68,39 @@ sequence2 = ""
 
 chars1 = seq1[-1]
 
+seq1 = "actcg"
+seq2 = "acagtag"
 
+seqFinal1 = ""
+seqFinal2 = ""
+
+seq1 = seq1[::-1]
+seq2 = seq2[::-1]
+
+seq1Counter = 0
+seq2Counter = 0
+finalScore = 0
+for i in path:
+    if i == "d":
+        seqFinal1 += seq1[seq1Counter]
+        seqFinal2 += seq2[seq2Counter]
+
+        if seq1[seq1Counter] == seq2[seq2Counter]:
+            finalScore += match
+        else:
+            finalScore += mismatch
+        seq1Counter += 1
+        seq2Counter += 1
+    elif i == 'l':
+        seqFinal1 += '-'
+        seqFinal2 += seq2[seq2Counter]
+        seq2Counter += 1
+        finalScore += gap
+    else:
+        seqFinal2 += '-'
+        seqFinal1 += seq2[seq1Counter]
+        seq1Counter += 1
+        finalScore += gap
+print(seqFinal1[::-1])
+print(seqFinal2[::-1])
+print(finalScore)

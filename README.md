@@ -3,14 +3,14 @@
 ### Overview
 `NeedlemanWunsch` NeedlemanWunsch implementation for pairwise global alignment of sequences.
 
-#### Classes (Topic -> Message Type)
+#### Classes (Class -> Description)
 - NeedWunsch:
     - `NeedWunsch` -> `Collection of methods to calculate.`
 - Node:
     - `Noder` -> `For building tree of path options.`
 
 #### Source
-Contained within the `Source` directory are the following files:
+Contained are the following files:
 
 - `needleman.py`: executable to calculate alignment score
 

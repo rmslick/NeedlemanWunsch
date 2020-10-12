@@ -5,9 +5,7 @@
 
 #### Classes (Class -> Description)
 - NeedWunsch:
-    - `NeedWunsch` -> `Collection of methods to calculate.`
-- Node:
-    - `Noder` -> `For building tree of path options.`
+    - `NeedWunsch` -> `Collection of methods to calculate.
 
 #### Source
 Contained are the following files:
@@ -18,7 +16,5 @@ Contained are the following files:
 python3 needleman.py
 ```
 python3 needleman.py
-Allowed options:
-  -s1                    First sequence
-  -s2                    Second sequence
+
 ```

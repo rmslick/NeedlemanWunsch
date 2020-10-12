@@ -1,7 +1,7 @@
 class NeedWunsch():
     def __init__(self, seq1, seq2, gap, mismatch, match):
-        self.seq1 = seq1
-        self.seq2 = seq2
+        self.seq1 = seq1.lower()
+        self.seq2 = seq2.lower()
         self.gap = gap
         self.mismatch = mismatch
         self.match = match
